@@ -1,0 +1,85 @@
+
+h1 {
+  font-family: 'Pangolin', sans-serif;
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: rgb(30, 203, 85);
+}
+
+p {
+  font-family: 'Pangolin', sans-serif;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex; /* Flex container for horizontal layout */
+  justify-content: space-between; /* Space out text and image */
+  align-items: center; /* Vertically align text and image */
+  margin-top: 20px;
+  padding: 0 20px; /* Horizontal padding */
+  position: relative; /* Enable positioning for layering */
+  gap: 20px; /* Add space between text and image */
+}
+
+.text-content {
+  flex: 1; /* Text takes one part of the available space */
+  text-align: left; /* Align text to the left */
+  z-index: 1; /* Ensure text stays above the button and image */
+  max-width: 50%; /* Ensure the text doesn't stretch too wide */
+}
+
+img {
+  
+  flex: 0; /* Prevent the image from stretching */
+  width: auto; /* Maintain natural width */
+  height: 550px; /* Set height for the image */
+  position: relative; /* Allow image to flow with layout */
+  z-index: 0; /* Ensure it layers behind text */
+  margin-right: 20px; /* Add space between the image and text */
+}
+
+.image-button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  left: 71%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure it layers above other elements */
+}
+
+.image-button img {
+  width: 500px; /* Adjust the size as needed */
+  height: 500px;
+  border-radius: 100%; /* Circular button style */
+}
+
+.egg {
+  display: block;
+  margin: 0px 0 200px 0; /* Pushes the egg to the right by auto-margin */
+  width: 300px; /* Adjust egg size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.cursor-img {
+  position: absolute; /* Position the image relative to the page */
+  pointer-events: none; /* Ensure the image doesn't block any interactions */
+  width: 500px; /* Adjust the size of the hand image */
+  height: auto; /* Keep the aspect ratio of the hand image */
+  z-index: 9999; /* Make sure it stays on top of other content */
+  display: none; /* Hide the image initially */
+}
+.cursor-img2 {
+  position: absolute; /* Position the image relative to the page */
+  pointer-events: none; /* Ensure the image doesn't block any interactions */
+  width: 1000px; /* Adjust the size of the hand image */
+  height: auto; /* Keep the aspect ratio of the hand image */
+  z-index: 9999; /* Make sure it stays on top of other content */
+  display: none; /* Hide the image initially */
+}
+
+
+
