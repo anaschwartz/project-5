@@ -4,40 +4,60 @@ h1 {
   font-size: 3em;
   margin-bottom: 10px;
   color: rgb(30, 203, 85);
+  background-color: lightgreen; 
+  padding: 20px; 
+  border: 2px solid rgb(30, 203, 85); 
+  border-radius: 15px; 
+  text-align: center; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 p {
   font-family: 'Pangolin', sans-serif;
-  font-size: 1em;
+  font-size: 20px;
   margin-bottom: 10px;
+  padding: 20px; 
+  border: 2px solid #ccc; 
+  border-radius: 15px; 
+  background-color: #f9f9f9; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.fyi {
+  font-family: 'Pangolin', sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding: 20px; 
+  border: 2px solid #ccc; 
+  border-radius: 15px; 
+  background-color: #cced28; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+  
+
+  position: absolute; 
+  bottom: -500px; 
+  left: 20%; 
+  transform: translateX(-50%); 
 }
 
 .container {
-  display: flex; /* Flex container for horizontal layout */
-  justify-content: space-between; /* Space out text and image */
-  align-items: center; /* Vertically align text and image */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
   margin-top: 20px;
-  padding: 0 20px; /* Horizontal padding */
-  position: relative; /* Enable positioning for layering */
-  gap: 20px; /* Add space between text and image */
+  padding: 0 20px; 
+  position: relative; 
+  gap: 20px; 
 }
 
 .text-content {
-  flex: 1; /* Text takes one part of the available space */
-  text-align: left; /* Align text to the left */
-  z-index: 1; /* Ensure text stays above the button and image */
-  max-width: 50%; /* Ensure the text doesn't stretch too wide */
+  flex: 1; 
+  text-align: left; 
+  z-index: 1; 
+  max-width: 50%; 
 }
 
-img {
-  
-  flex: 0; /* Prevent the image from stretching */
-  width: auto; /* Maintain natural width */
-  height: 550px; /* Set height for the image */
-  position: relative; /* Allow image to flow with layout */
-  z-index: 0; /* Ensure it layers behind text */
-  margin-right: 20px; /* Add space between the image and text */
-}
 
 .image-button {
   border: none;
@@ -45,41 +65,94 @@ img {
   background: none;
   cursor: pointer;
   position: fixed;
-  bottom: 30px;
+  bottom: 10px;
   left: 71%;
   transform: translateX(-50%);
-  z-index: 1; /* Ensure it layers above other elements */
+  z-index: 1; 
 }
 
 .image-button img {
-  width: 500px; /* Adjust the size as needed */
-  height: 500px;
-  border-radius: 100%; /* Circular button style */
+  width: 900px; 
+  height: 900px;
+  border-radius: 100%; 
 }
 
 .egg {
-  display: block;
-  margin: 0px 0 200px 0; /* Pushes the egg to the right by auto-margin */
-  width: 300px; /* Adjust egg size */
-  height: auto; /* Maintain aspect ratio */
+  position: fixed;
+  bottom: -80px;
+  left: 50%;
+  width: 500px; 
+  height: auto; 
+}
+
+.poof {
+  position: fixed;
+  bottom: 35px;
+  left: 56%;
+  width: 380px; 
+  height: auto; 
+}
+.chomp {
+  position: fixed;
+  bottom: 70px;
+  left: 60%;
+  width: 300px; 
+  height: auto; 
+}
+.idle {
+  position: fixed;
+  bottom: -450px;
+  left: 30%;
+  width: 1000px; 
+  height: auto; 
+}
+.evil {
+  position: fixed;
+  bottom: -190px;
+  left: 36%;
+  width: 500px; 
+  height: auto; 
 }
 
 .cursor-img {
-  position: absolute; /* Position the image relative to the page */
-  pointer-events: none; /* Ensure the image doesn't block any interactions */
-  width: 500px; /* Adjust the size of the hand image */
-  height: auto; /* Keep the aspect ratio of the hand image */
-  z-index: 9999; /* Make sure it stays on top of other content */
-  display: none; /* Hide the image initially */
+  position: absolute; 
+  pointer-events: none; 
+  width: 500px; 
+  height: auto; 
+  z-index: 9999; 
+  display: none; 
 }
 .cursor-img2 {
-  position: absolute; /* Position the image relative to the page */
-  pointer-events: none; /* Ensure the image doesn't block any interactions */
-  width: 1000px; /* Adjust the size of the hand image */
-  height: auto; /* Keep the aspect ratio of the hand image */
-  z-index: 9999; /* Make sure it stays on top of other content */
-  display: none; /* Hide the image initially */
+  position: absolute; 
+  pointer-events: none; 
+  width: 1000px; 
+  height: auto; 
+  z-index: 9999; 
+  display: none; 
 }
+
+
+.walking {
+  position: fixed;
+  top: 550px; 
+  right: 50px; 
+  width: 1000px; 
+  height: auto;
+  transform: translateY(-50%);
+  animation: walk-off 20s linear forwards; 
+}
+
+@keyframes walk-off {
+  0% {
+    right: -30px; 
+  }
+  100% {
+    right: 120%; 
+  }
+}
+
+
+
 
 
 
