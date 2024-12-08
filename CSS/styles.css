@@ -36,7 +36,7 @@ p {
   
 
   position: absolute; 
-  bottom: -500px; 
+  bottom: -200px; 
   left: 20%; 
   transform: translateX(-50%); 
 }
@@ -72,45 +72,45 @@ p {
 }
 
 .image-button img {
-  width: 900px; 
-  height: 900px;
+  width: 800px; 
+  height: 800px;
   border-radius: 100%; 
 }
 
 .egg {
   position: fixed;
-  bottom: -80px;
-  left: 50%;
+  bottom: -110px;
+  left: 48%;
   width: 500px; 
   height: auto; 
 }
 
 .poof {
   position: fixed;
-  bottom: 35px;
-  left: 56%;
-  width: 380px; 
+  bottom: 20px;
+  left: 54%;
+  width: 360px; 
   height: auto; 
 }
 .chomp {
   position: fixed;
-  bottom: 70px;
-  left: 60%;
+  bottom: 50px;
+  left: 58%;
   width: 300px; 
   height: auto; 
 }
 .idle {
   position: fixed;
-  bottom: -450px;
-  left: 30%;
+  bottom: -500px;
+  left: 25%;
   width: 1000px; 
   height: auto; 
 }
 .evil {
   position: fixed;
-  bottom: -190px;
-  left: 36%;
-  width: 500px; 
+  bottom: -500px;
+  left: 22%;
+  width: 1000px; 
   height: auto; 
 }
 
@@ -134,7 +134,7 @@ p {
 
 .walking {
   position: fixed;
-  top: 550px; 
+  top: 325px; 
   right: 50px; 
   width: 1000px; 
   height: auto;
@@ -144,7 +144,7 @@ p {
 
 @keyframes walk-off {
   0% {
-    right: -30px; 
+    right: -60px; 
   }
   100% {
     right: 120%; 
